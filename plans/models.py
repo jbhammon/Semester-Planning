@@ -44,7 +44,7 @@ class Assignment(models.Model):
     def __str__(self):
         return self.name
 
-class DaysOff(models.Model):
+class Break(models.Model):
     plan_id = models.ForeignKey('Plan', on_delete=models.SET_NULL, null=True)
     start_date = models.DateField()
     end_date = models.DateField()
